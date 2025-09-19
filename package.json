@@ -1,0 +1,37 @@
+{
+  "name": "online-courses93",
+  "version": "1.0.0",
+  "description": "A comprehensive online learning platform",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm run dev",
+    "client": "cd frontend && npm start",
+    "build": "cd frontend && npm run build",
+    "start": "cd backend && npm start",
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "test": "cd backend && npm test && cd ../frontend && npm test",
+    "lint": "cd backend && npm run lint && cd ../frontend && npm run lint"
+  },
+  "keywords": [
+    "online-learning",
+    "education",
+    "courses",
+    "react",
+    "nodejs",
+    "mongodb"
+  ],
+  "author": "tc7clean-wq",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tc7clean-wq/Online_Courses93.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tc7clean-wq/Online_Courses93/issues"
+  },
+  "homepage": "https://github.com/tc7clean-wq/Online_Courses93#readme"
+}
